@@ -127,10 +127,11 @@ int main(){
     };
     vector<int> y = {0, 0, 1, 1, 0, 0, 1, 0};
 
-    Node* root = build_tree(X, y, 0, 3); // max_depth = 3
+    Node* root = build_tree(X, y, 0, 3);
 
     vector<double> test = {3.2, 0.8};
     cout << "Prediction: " << predict(root, test) << endl;
 
     return 0;
+
 }
